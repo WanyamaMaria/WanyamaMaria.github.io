@@ -28,14 +28,8 @@ a {
   cursor: pointer;
 }
 
-img {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+
+
 
 video {
   -webkit-touch-callout: none;
@@ -94,7 +88,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color:teal;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -241,7 +235,7 @@ hr {
 
 .menu .menu-items .dropdown .dropdown-content a:hover {
   background-color: #ddd;
-  color: black;
+  color: teal;
 }
 
 .menu .menu-items .dropdown .dropdown-content a:last-child:hover {
@@ -275,7 +269,7 @@ hr {
 .content ul a,
 .content ol a {
   text-decoration: none;
-  color: #005cbf;
+  color:teal;
 }
 
 .content p a:hover,
@@ -297,7 +291,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  background-color:teal;
   display: flex;
 }
 
