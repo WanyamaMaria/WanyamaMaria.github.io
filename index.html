@@ -4,6 +4,10 @@
 <head>
   <title>GROWGRAIL</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -11,7 +15,10 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
@@ -19,6 +26,23 @@
       color: rgb(255, 255, 255) !important;
       opacity: 1 !important;
       font-weight: 700 !important;
+    }
+    .slick-slide {
+      text-align: center;
+      padding: 20px;
+    }
+    .slick-slide img {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .slick-slide .name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .slick-slide .role {
+      color: #555;
     }
   </style>
 </head>
@@ -34,7 +58,7 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             
-            <h2 class="add-top-margin-small" style="color:white;">WELCOME TO GROWGRAIL, YOUR ONE NEXT STOP TO FINANCIAL FREEDOM!!</h2>
+            <h2 class="add-top-margin-small" style="color:white;">WELCOME TO GROWGRAIL, YOUR NEXT STOP TO FINANCIAL FREEDOM!!</h2>
             <p class="text">
               At Grow Grail, we believe that financial freedom is not just a dream, but an achievable reality.
               Grow Grail is more than just a savings app; it’s your trusted partner on the journey to financial wellness.
@@ -51,10 +75,10 @@
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
         <!--Start Intro-->
-        <div class="flex-row">
+        <!--<div class="flex-row">
           <div class="flex-item flex-column">
-            <img class="image" src="img/group.jpeg">
-          </div>
+            <img class="image" src="img/GGlogo.png">
+          </div>-->
           <div class="flex-item flex-column">
             <p class="text text-large">
               
@@ -68,7 +92,7 @@
                     color: #333;
                   }
                   .container {
-                    max-width: 800px;
+                    max-width: 500px;
                     margin: 0 auto;
                     padding: 20px;
                   }
@@ -80,7 +104,7 @@
                   }
                   .contact-info h2 {
                     margin-top: 0;
-                    color: teal;
+                    color: black;
                   }
                   .contact-info p {
                     margin: 10px 0;
@@ -92,6 +116,8 @@
                   }
                   .contact-info .name {
                     font-weight: bold;
+                    color: teal;
+
                   }
                   .contact-info .role {
                     color: #555;
@@ -104,50 +130,86 @@
                     font-style: italic;
                     color: #777;
                   }
+                  .h2{
+                    
+                    font-weight: bold;
+
+                  }
                 </style>
               
-              <body>
-                <div class="container">
-                  <div class="contact-info">
-                    <h2>Meet The Team</h2>
-                    <p class="text text-large">
+              <div class="container">
+                <div class="contact-info">
+                  <h2>Meet The Team</h2>
+                  <div class="team-carousel">
+                    <div>
+                      <img src="img/GGlogo.png" alt="Atuhaire Brian">
                       <span class="name">Atuhaire Brian</span>
-                      <span class="role">Software Developer</span><br>
+                      <span class="role">Software Developer</span>
+                    </div>
+                    <div>
+                      <img src="img/GGlogo.png" alt="Tusiime Emily Queen">
                       <span class="name">Tusiime Emily Queen</span>
-                      <span class="role">UI Designer</span><br>
+                      <span class="role">UI Designer</span>
+                    </div>
+                    <div>
+                      <img src="img/GGlogo.png" alt="Karungi Maria Daphine">
                       <span class="name">Karungi Maria Daphine</span>
-                      <span class="role">Systems Analyst</span><br>
+                      <span class="role">Systems Analyst</span>
+                    </div>
+                    <div>
+                      <img src="img/GGlogo.png" alt="Kagolo Firdaus">
                       <span class="name">Kagolo Firdaus</span>
-                      <span class="role">Network Administrator</span><br>
+                      <span class="role">Network Administrator</span>
+                    </div>
+                    <div>
+                      <img src="img/GGlogo.png" alt="Ssebunya Ronaldo">
                       <span class="name">Ssebunya Ronaldo</span>
-                      <span class="role">Cybersecurity Expert</span><br><br>
-                      
-                      <span class="institution">Makerere University Uganda</span><br>
-                      <span class="department">Department of Computer Science</span><br>
-                    </p>
+                      <span class="role">Cybersecurity Expert</span>
+                    </div>
                   </div>
-                  
-                  
+                  <br>
+                  <span class="institution">Makerere University Uganda</span><br>
+                  <span class="department">Department of Computer Science</span><br>
                 </div>
-              </body>
-              </html>
-              
-            
-
+              </div>
             </p>
           </div>
-        
-   
-           
-      
-        
-        
+        </div>
         <!--End Credits-->
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
     <div class="footer-container"></div>
   </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.team-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 
 </html>
