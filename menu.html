@@ -6,44 +6,55 @@
   <title>Styled Navbar</title>
   <style>
     .menu {
-      background-color:black; /* Optional: to see the white text better */
-      padding: 10px;
-    }
-    .menu-table {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo a {
-      color: white;
-      font-size: 24px;
-      text-decoration: none;
-    }
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      font-size: 24px;
-    }
-    .menu-items {
-      display: flex;
-      align-items: center;
-    }
-    .navbar a {
-      color: white;
-      margin-right: 15px; /* Adjust the spacing between links */
-      text-decoration: none;
-      font-size: 18px;
-    }
+  background-color: teal; /* Optional: to see the white text better */
+  padding: 10px;
+}
+.menu-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo p {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: italic;
+}
+.logo span {
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+}
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 50px; /* Align links further to the left */
+}
+.navbar a {
+  color: white;
+  margin-right: 10px; /* Adjust the spacing between links */
+  text-decoration: none;
+  font-size: 18px;
+}
+
   </style>
 </head>
 <body>
   <div class="menu">
     <div class="menu-table flex-row-space-between">
       <div class="logo flex-row-center">
-        <a href="index.html">GROWGRAIL</a>
-        
+        <p><span>GROWGRAIL</p>
       </div>
       <a class="menu-button" tabindex="0" href="javascript:void(0)">
         &#9776; <!-- This is a hamburger menu icon -->
