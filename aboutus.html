@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - GrowGrail</title>
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
@@ -24,21 +24,31 @@
     }
 
     .header {
-      background-color: teal; /* Teal background */
+      position: relative;
+      background-color: teal;
       color: white;
       padding: 20px;
       text-align: center;
     }
 
     .header h1 {
-      color:white;
       margin: 0;
       font-size: 36px;
+      color: white;
     }
 
     .header p {
       margin: 5px 0 0;
       font-size: 18px;
+    }
+
+    .header .back-to-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
     }
 
     .container {
@@ -55,7 +65,7 @@
     }
 
     .about-content h2 {
-      color: teal; /* Teal color */
+      color: teal;
       font-size: 28px;
       margin-top: 0;
     }
@@ -66,7 +76,7 @@
     }
 
     .footer {
-      background-color: teal; /* Teal background */
+      background-color: teal;
       color: white;
       text-align: center;
       padding: 10px;
@@ -80,45 +90,35 @@
     }
 
     .custom-button {
-      background-color: teal; /* Teal color */
+      background-color: teal;
       border: 1px solid teal;
       color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .custom-button:hover {
-      background-color: teal;
-      border-color: teal;
-    }
-
-    .custom-button:active {
-      background-color: teal;
-      border-color: teal;
+      background-color: #005f5f;
     }
   </style>
 </head>
 
 <body>
-  <div class="header" style="position: relative;">
+  <div class="header">
+    <a href="index.html" class="back-to-home">&#8592;</a>
     <h1>About GrowGrail</h1>
     <p>Your Next Stop to Financial Freedom</p>
-    <!-- <img src="img/GGlogo.png" alt="GrowGrail Logo" style="position: absolute; top: 10px; right: 10px; height: 100px;">-->
-</div>
-
+  </div>
 
   <div class="container">
     <div class="about-content">
-      
       <p>At GrowGrail, we are dedicated to helping students achieve their financial goals. Our innovative savings app is designed to make saving money easier and more effective than ever before.</p>
-
       <p>Whether you're saving for a rainy day, a special purchase, or your future, GrowGrail provides you with the tools and insights you need to make informed decisions and reach your targets. With user-friendly features and real-time tracking, you'll be on your way to financial success in no time.</p>
-
       <p>Join the thousands of students out there who have already transformed their financial habits with GrowGrail. Start saving smarter today!</p>
-
       <p>Speak about money growth? We have you covered with our interest rate that is conditional.</p>
-
-
-      
-
       <a href="https://growgrail.com" class="custom-button">Learn More</a>
     </div>
   </div>

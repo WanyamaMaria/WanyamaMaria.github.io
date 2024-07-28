@@ -13,10 +13,19 @@
       color: #333;
     }
     .header {
+      position: relative;
       text-align: center;
       padding: 20px;
-      background-color:teal;
+      background-color: teal;
       color: white;
+    }
+    .header .back-to-home {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
     }
     .container {
       padding: 20px;
@@ -62,7 +71,7 @@
       cursor: pointer;
     }
     .form-group button:hover {
-      background-color: teal;
+      background-color: #005f5f;
     }
     .contact-details {
       background-color: white;
@@ -90,6 +99,7 @@
 </head>
 <body>
   <div class="header">
+    <a href="index.html" class="back-to-home">&#8592;</a>
     <h1>Contact Us</h1>
     <p>We'd love to hear from you! Please fill out the form below to get in touch with us, or reach out via the contact details provided.</p>
   </div>
